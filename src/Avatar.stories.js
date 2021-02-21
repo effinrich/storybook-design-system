@@ -4,7 +4,11 @@ import { Avatar } from './Avatar'
 
 export default {
   title: 'Design System/Avatar',
-  component: Avatar
+  component: Avatar,
+  parameters: {
+    componentSubtitle:
+      'Displays an image that represents a user or organization'
+  }
 }
 
 // START New story using controls
@@ -13,9 +17,9 @@ const Template = args => <Avatar {...args} />
 export const Controls = Template.bind({})
 Controls.args = {
   loading: false,
-  size: 'tiny',
+  size: 'medium',
   username: 'Rich Tillman',
-  src: 'https://avatars2.githubusercontent.com/u/263385'
+  src: 'https://avatars.githubusercontent.com/u/183598'
 }
 // END New story using controls
 
@@ -37,6 +41,12 @@ export const Sizes = args => (
 Sizes.args = {
   username: 'Rich Tillman',
   src: 'https://avatars.githubusercontent.com/u/183598'
+}
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: '4 sizes are supported.'
+  }
 }
 
 export const Initials = args => (

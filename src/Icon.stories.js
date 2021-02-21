@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-import styled, { css } from 'styled-components';
+import React, { Fragment } from 'react'
+import styled, { css } from 'styled-components'
 
-import { Icon } from './Icon';
-import { icons } from './shared/icons';
+import { Icon } from './Icon'
+import { icons } from './shared/icons'
 
 const Meta = styled.div`
   color: #666;
   font-size: 12px;
-`;
+`
 
 const Item = styled.li`
   display: inline-flex;
@@ -40,20 +40,20 @@ const Item = styled.li`
         height: 48px;
       }
     `};
-`;
+`
 
 const List = styled.ul`
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-`;
+`
 
 export default {
   title: 'Design System/Icon',
-  component: Icon,
-};
+  component: Icon
+}
 
-export const Labels = (args) => (
+export const Labels = args => (
   <Fragment>
     There are {Object.keys(icons).length} icons
     <List>
@@ -65,9 +65,9 @@ export const Labels = (args) => (
       ))}
     </List>
   </Fragment>
-);
+)
 
-export const NoLabels = (args) => (
+export const NoLabels = args => (
   <List>
     {Object.keys(icons).map(key => (
       <Item minimal key={key}>
@@ -75,27 +75,27 @@ export const NoLabels = (args) => (
       </Item>
     ))}
   </List>
-);
+)
 
-NoLabels.storyName = 'no labels';
+NoLabels.storyName = 'no labels'
 
-export const Inline = (args) => (
+export const Inline = args => (
   <Fragment>
     this is an inline <Icon {...args} /> icon (default)
   </Fragment>
-);
-Inline.args={
-  icon:'facehappy',
-  "aria-label":'Happy face',
-};
+)
+Inline.args = {
+  icon: 'facehappy',
+  'aria-label': 'Happy face'
+}
 
-export const Block = (args) =>(
+export const Block = args => (
   <Fragment>
     this is a block <Icon {...args} /> icon
   </Fragment>
-);
-Block.args={
-  icon:'facehappy',
-  "aria-label":'Happy face',
-  block:true
-};
+)
+Block.args = {
+  icon: 'facehappy',
+  'aria-label': 'Happy face',
+  block: true
+}

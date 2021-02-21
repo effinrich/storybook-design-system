@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from 'styled-components'
 
 // Global style variables
 export const background = {
@@ -6,8 +6,8 @@ export const background = {
   appInverse: '#7A8997',
   positive: '#E1FFD4',
   negative: '#FEDED2',
-  warning: '#FFF5CF',
-};
+  warning: '#FFF5CF'
+}
 
 export const color = {
   // Palette
@@ -38,31 +38,32 @@ export const color = {
   // Status
   positive: '#66BF3C',
   negative: '#FF4400',
-  warning: '#E69D00',
-};
+  warning: '#E69D00'
+}
 
 export const spacing = {
   padding: {
     small: 10,
     medium: 20,
-    large: 30,
+    large: 30
   },
   borderRadius: {
     small: 5,
-    default: 10,
-  },
-};
+    default: 10
+  }
+}
 
 export const typography = {
   type: {
     primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
-    code: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
+    code:
+      '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
   },
   weight: {
     regular: '400',
     bold: '700',
     extrabold: '800',
-    black: '900',
+    black: '900'
   },
   size: {
     s1: '12',
@@ -74,12 +75,12 @@ export const typography = {
     l1: '32',
     l2: '40',
     l3: '48',
-    code: '90',
-  },
-};
+    code: '90'
+  }
+}
 
-export const breakpoint = 600;
-export const pageMargin = '5.55555';
+export const breakpoint = 600
+export const pageMargin = '5.55555'
 
 export const pageMargins = css`
   padding: 0 ${spacing.padding.medium}px;
@@ -95,4 +96,4 @@ export const pageMargins = css`
   @media (min-width: ${breakpoint * 4}px) {
     margin: 0 ${pageMargin * 4}%;
   }
-`;
+`
