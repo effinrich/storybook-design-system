@@ -27,7 +27,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
-    "chromatic": "./node_modules/.bin/chromatic --project-token=CHROMATIC_TOKEN --exit-zero-on-changes --exit-once-uploaded"
+    "chromatic": "./node_modules/.bin/chromatic --project-token=CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes --exit-once-uploaded"
   },
   "prettier": {
     "tabWidth": 2,
