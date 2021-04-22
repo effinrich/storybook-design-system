@@ -1,4 +1,4 @@
-# The Learn Storybook design system
+# The Storybook design system and workflow
 
 The Learn Storybook design system is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.
 
