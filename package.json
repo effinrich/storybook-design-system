@@ -2,7 +2,7 @@
   "name": "storybook-design-system",
   "version": "0.1.0",
   "private": false,
-  "description": "First swing at an isolated design system using styled-components, Storybook, Chromatic and publish to NPM for reuse.",
+  "description": "Isolated design system using styled-components, Storybook, Chromatic and publish to NPM for reuse.",
   "main": "dist/index.js",
   "repository": "https://effinrich@github.com/effinrich/storybook-design-system.git",
   "author": "Rich <pingme@richtillman.com>",
